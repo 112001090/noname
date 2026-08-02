@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+
+<style>
+body{
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+}
+
+.container{
+    text-align:center;
+}
+
+input{
+    width:250px;
+    padding:10px;
+    font-size:16px;
+}
+
+button{
+    margin-top:10px;
+    padding:10px 25px;
+    font-size:16px;
+    cursor:pointer;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<input id="senha" type="text" placeholder="Enter password">
+
+<br>
+
+<button onclick="entrar()">
+Acess
+</button>
+
+</div>
+
+<script>
+
+function entrar(){
+
+let senha=document.getElementById("senha").value;
+
+if(senha=="cicada3301"){
+
+document.body.innerHTML = `
+<div style="display:flex;justify-content:center;align-items:center;height:100vh;background:black;color:white;font-size:40px;font-family:Arial;">
+ÁRVORE
+</div>
+`;
+
+}
+else{
+
+document.getElementById("senha").value = "";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
