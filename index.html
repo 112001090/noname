@@ -2,50 +2,76 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Login</title>
+<title>N2jtj6</title>
 
 <style>
+
 body{
     background:#000;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
     margin:0;
 }
 
+.top{
+    position:absolute;
+    top:6px;
+    left:0;
+    width:100%;
+    text-align:center;
+}
+
+p{
+    color:white;
+    font-family:Arial;
+    margin:8px;
+    font-size:22px;
+}
+
 .container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
     text-align:center;
 }
 
 input{
-    width:250px;
-    padding:10px;
-    font-size:16px;
+    width:230px;
+    padding:7px;
+    font-size:14px;
 }
 
 button{
-    margin-top:10px;
-    padding:10px 25px;
-    font-size:16px;
+    margin-top:8px;
+    padding:6px 23px;
+    font-size:12px;
     cursor:pointer;
+    background:white;
+    color:black;
+    border:none;
 }
+
 </style>
 
 </head>
+
 <body>
+
+<div class="top">
+    <p>Password:</p>
+</div>
+
 
 <div class="container">
 
 <input id="senha" type="text" placeholder="Enter password">
-
-<br>
 
 <button onclick="entrar()">
 Acess
 </button>
 
 </div>
+
 
 <script>
 
@@ -56,15 +82,36 @@ let senha=document.getElementById("senha").value;
 if(senha=="cicada3301"){
 
 document.body.innerHTML = `
-<div style="display:flex;justify-content:center;align-items:center;height:100vh;background:black;color:white;font-size:40px;font-family:Arial;">
-ÁRVORE
+<div style="
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:black;
+font-family:Arial;
+">
+
+<img src="tre3.png" style="
+max-width:80%;
+max-height:70%;
+">
+
+<p style="
+color:white;
+font-size:15px;
+">
+LTIzLjQzMjY5MDk0ODg3NjgzMiwgLTQ5LjcyMjEzMDE3MjkyMzcy / 4³ esab
+</p>
+
 </div>
 `;
 
 }
+
 else{
 
-document.getElementById("senha").value = "";
+document.getElementById("senha").value="";
 
 }
 
